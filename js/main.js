@@ -689,9 +689,9 @@
           .from('.hero__eyebrow', { y: 24, autoAlpha: 0, duration: 0.7 }, 0.35)
           .from('.hero__title .line__inner', { yPercent: 115, duration: 1.1, stagger: 0.15, ease: 'power4.out' }, 0.5)
           .from('.hero__copy', { y: 25, autoAlpha: 0 }, 0.95)
-          .from('.hero__ctas .btn', { y: 22, autoAlpha: 0, stagger: 0.1, duration: 0.7 }, 1.1)
-          .from('.hero__meta', { autoAlpha: 0, duration: 0.6 }, 1.3)
-          .from('.hero__scroll', { autoAlpha: 0, y: -8, duration: 0.6 }, 1.4);
+          .from('.hero__ctas', { y: 20, autoAlpha: 0, duration: 0.7 }, 1.05)
+          .from('.hero__meta', { y: 15, autoAlpha: 0, duration: 0.6 }, 1.2)
+          .from('.hero__scroll', { autoAlpha: 0, y: -8, duration: 0.6 }, 1.35);
 
         /* Rotating badge continuous & scroll speedup */
         gsap.to('.hero__badge-ring', {
@@ -722,9 +722,9 @@
           .from('.hero__eyebrow', { y: 24, autoAlpha: 0, duration: 0.7 }, 0.3)
           .from('.hero__title .line__inner', { yPercent: 115, duration: 1.1, stagger: 0.14, ease: 'power4.out' }, 0.45)
           .from('.hero__copy', { y: 25, autoAlpha: 0 }, 0.9)
-          .from('.hero__ctas .btn', { y: 22, autoAlpha: 0, stagger: 0.1, duration: 0.7 }, 1.05)
-          .from('.hero__meta', { autoAlpha: 0, duration: 0.6 }, 1.25)
-          .from('.hero__scroll', { autoAlpha: 0, y: -8, duration: 0.6 }, 1.35);
+          .from('.hero__ctas', { y: 20, autoAlpha: 0, duration: 0.7 }, 1.0)
+          .from('.hero__meta', { y: 15, autoAlpha: 0, duration: 0.6 }, 1.15)
+          .from('.hero__scroll', { autoAlpha: 0, y: -8, duration: 0.6 }, 1.3);
 
         /* Mobile hero background parallax */
         gsap.to('.hero__img', {
