@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Menu — Sip &amp; Chill Café | Handcrafted Sips &amp; Bites</title>
+  <meta name="description" content="Explore the full menu of Sip & Chill Café — Teas, coffees, cold brews, thick shakes, grilled sandwiches, loaded fries, maggie, and chaat.">
+  <link rel="icon" type="image/png" href="./assets/icons/logo.png">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="./assets/icons/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- SVG ICON LIBRARY -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-tea" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h13v4.5A5.5 5.5 0 0 1 11.5 20h-2A5.5 5.5 0 0 1 4 14.5V10z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 7c0-1.5 1.5-1.5 1.5-3M12 7c0-1.5 1.5-1.5 1.5-3"/></g></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9h14v5a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6V9z"/><path d="M17.5 10h1.75a2.75 2.75 0 0 1 0 5.5H17.5"/><path d="M6 5.5c0-1.4 1.4-1.4 1.4-2.8M10 5.5c0-1.4 1.4-1.4 1.4-2.8"/></g></symbol>
+    <symbol id="i-iced" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1.5 17a1.5 1.5 0 0 1-1.5 1.35H9A1.5 1.5 0 0 1 7.5 20L6 3z"/><path d="M7 9.5h10.3"/><path d="M12.5 5.5l-2 2M15 6l-2.5 2.5"/></g></symbol>
+    <symbol id="i-shake" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h12l-1.4 13a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.8L6 6z"/><path d="M6 6c0-2 1.5-3 3-3M12 2.5v1"/><path d="M8.2 11.5h7.6"/></g></symbol>
+    <symbol id="i-sandwich" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5c0-1.7 3.8-3.5 8.5-3.5s8.5 1.8 8.5 3.5c0 1-1 1.5-2 1.5h-13c-1 0-2-.5-2-1.5z"/><path d="M4 13h16M5 16.5h14"/><path d="M4.5 20c0 .8.7 1.5 1.5 1.5h12c.8 0 1.5-.7 1.5-1.5"/></g></symbol>
+    <symbol id="i-grill" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5h16l-1.2 11a1.5 1.5 0 0 1-1.5 1.35H6.7A1.5 1.5 0 0 1 5.2 19.5L4 8.5z"/><path d="M3 5.5C3 4 5 3 12 3s9 1 9 2.5c0 .8-.9 1.5-9 1.5S3 6.3 3 5.5z"/><path d="M9.5 12.5v5M14.5 12.5v5"/></g></symbol>
+    <symbol id="i-fries" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10.5h10l-1.1 9.2a1.5 1.5 0 0 1-1.5 1.3H9.6a1.5 1.5 0 0 1-1.5-1.3L7 10.5z"/><path d="M9 10V4.5M12 10V3M15 10V4.5M6.5 10.5l-2-3M17.5 10.5l2-3"/></g></symbol>
+    <symbol id="i-bowl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18c0 5-4 8.5-9 8.5S3 16 3 11z"/><path d="M8 8c1.5-1 2-2.5 1.5-4.5M13 8c1.5-1 2-2.5 1.5-4.5"/></g></symbol>
+    <symbol id="i-chaat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="3.5"/><circle cx="16.5" cy="9.5" r="3"/><path d="M3 17.5c3 2 6 2.5 9 2.5s6-.5 9-2.5"/><path d="M7 11.5v1M16.5 12.5v1"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-7-6.1-7-11.5a7 7 0 0 1 14 0c0 5.4-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.75"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></g></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z"/></g></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C5 9 12 4 20 4c0 8-5 15-15 15z"/><path d="M5 19c3-5 7-9 11-11"/></g></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/></g></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9"/><path d="M19 14v5a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 19V6.5A1.5 1.5 0 0 1 5.5 5H10"/></g></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g></symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6l-6 6 6 6"/></g></symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></g></symbol>
+  </svg>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ======================= ANNOUNCEMENT STRIP ======================= -->
+  <p class="announce" aria-hidden="false">
+    <span class="announce__text">Good Coffee&ensp;·&ensp;Good Food&ensp;·&ensp;Good Vibes</span>
+  </p>
+
+  <!-- ======================= NAVIGATION ======================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__brand" href="index.html" aria-label="Sip & Chill Café — Home">
+        <img class="nav__brand-mark" src="./assets/icons/logo.png" alt="Sip & Chill Café Logo" width="48" height="48">
+        <span class="nav__brand-text">
+          <span class="nav__brand-name">Sip &amp; Chill</span>
+          <span class="nav__brand-sub">Café</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="story.html">Our Story</a>
+        <a href="menu.html" class="is-active" aria-current="page">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="menu.html" class="btn btn--gold nav__cta">Explore Menu</a>
+      </nav>
+
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Open menu</span>
+        <svg class="nav__toggle-icon nav__toggle-icon--open" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="nav__toggle-icon nav__toggle-icon--close" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="mobile-menu" aria-hidden="true">
+    <nav class="drawer__inner" aria-label="Mobile">
+      <img class="drawer__logo" src="./assets/icons/logo.png" alt="Sip & Chill Café Logo" width="68" height="68">
+      <p class="drawer__tag">Every Sip Has A Story</p>
+      <a href="index.html" class="drawer__link"><span>Home</span></a>
+      <a href="story.html" class="drawer__link"><span>Our Story</span></a>
+      <a href="menu.html" class="drawer__link is-active" aria-current="page"><span>Menu</span></a>
+      <a href="gallery.html" class="drawer__link"><span>Gallery</span></a>
+      <a href="visit.html" class="drawer__link"><span>Visit Us</span></a>
+      <a href="menu.html" class="btn btn--gold drawer__cta">Explore Menu</a>
+      <p class="drawer__foot">Good Coffee · Good Food · Good Vibes</p>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ======================= SUBPAGE HERO ======================= -->
+    <section class="subhero">
+      <div class="subhero__media" aria-hidden="true">
+        <img src="./assets/images/cafe-counter.jpg" alt="" width="839" height="1400" fetchpriority="high">
+      </div>
+      <div class="subhero__scrim" aria-hidden="true"></div>
+
+      <div class="container subhero__inner">
+        <p class="subhero__eyebrow">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;" aria-hidden="true"><use href="#i-sparkle"/></svg>
+          Handcrafted Sips &amp; Fresh Bites
+        </p>
+        <h1 class="subhero__title">Our Complete Menu — <em>Sips, Bites &amp; Soul.</em></h1>
+        <p class="subhero__lede">Every recipe made fresh to order. From steaming chai and velvety frappes to golden grilled multi-layer sandwiches, crispy fries, and nostalgic comfort bowls.</p>
+
+        <div class="subhero__badge-wrap">
+          <span class="subhero__chip"><svg viewBox="0 0 24 24" style="width:14px;height:14px;" aria-hidden="true"><use href="#i-leaf"/></svg> 100% Pure Vegetarian</span>
+          <span class="subhero__chip"><svg viewBox="0 0 24 24" style="width:14px;height:14px;" aria-hidden="true"><use href="#i-sparkle"/></svg> Jain Preparations Available</span>
+          <span class="subhero__chip"><svg viewBox="0 0 24 24" style="width:14px;height:14px;" aria-hidden="true"><use href="#i-coffee"/></svg> Made Fresh To Order</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= INTERACTIVE MENU SECTION ======================= -->
+    <section class="section" style="padding-top: 1.2rem;">
+      <div class="container">
+
+        <!-- Toolbar: Search + Filter Chips + Board Lightbox CTA -->
+        <div class="menu-toolbar" data-reveal>
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+            <div class="menu-search-wrap" style="flex: 1; min-width: 260px;">
+              <svg class="menu-search-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"/></svg>
+              <input type="search" id="menu-search" class="menu-search-input" placeholder="Search menu (e.g. Masala Tea, Cold Coffee, Peri Peri, KitKat, Grill)..." aria-label="Search menu items">
+            </div>
+
+            <button class="btn btn--outline btn--sm" id="view-menu-board" type="button">
+              <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-expand"/></svg>
+              View In-Store Menu Board Photo
+            </button>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.8rem;">
+            <div class="filter-row" id="dedicated-filters" role="group" aria-label="Category filters" style="margin-bottom: 0;"></div>
+            <span class="menu-search-status" id="menu-count">Showing all items</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Menu Cards Grid -->
+        <div class="menu-grid" id="dedicated-menu-grid" aria-live="polite"></div>
+
+        <!-- Menu Notes & Jain Availability -->
+        <div style="margin-top: 2rem; padding: clamp(1.2rem, 3vw, 1.8rem); background: var(--cream-soft); border-radius: var(--radius-md); border-left: 4px solid var(--gold);" data-reveal>
+          <h3 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--plum); margin-bottom: 0.5rem;">Café Dietary &amp; Preparation Notes</h3>
+          <ul class="menu-notes" role="list" style="margin-top: 0.5rem;">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-leaf"/></svg> All Jain preparations are available on request — please inform the counter when ordering.</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg> More exciting seasonal items coming soon.</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-coffee"/></svg> Authentic pricing: All items are transcribed exactly from the official café menu board.</li>
+          </ul>
+        </div>
+
+        <!-- Visit Invitation Banner -->
+        <div style="margin-top: 2rem; background: var(--plum); color: var(--cream); border-radius: var(--radius-lg); padding: clamp(1.8rem, 4vw, 2.8rem); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem;" data-reveal>
+          <div>
+            <p style="font-family: var(--font-serif); font-style: italic; color: var(--gold); font-size: 1.1rem; margin-bottom: 0.3rem;">Found your craving?</p>
+            <h2 style="font-family: var(--font-serif); font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; color: var(--cream);">Come by and grab a seat.</h2>
+            <p style="color: var(--cream-soft-text); margin-top: 0.4rem; max-width: 44ch;">Fresh sips and warm bites are best enjoyed beneath the floral ceiling.</p>
+          </div>
+          <div style="display: flex; gap: 0.9rem; flex-wrap: wrap;">
+            <a class="btn btn--gold" href="https://maps.app.goo.gl/Jgcs1RRxFxRZBNLQA" target="_blank" rel="noopener">
+              Get Directions <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-external"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="visit.html">Café Hours &amp; Location</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="footer__brand-link" href="index.html" aria-label="Sip & Chill Café">
+          <img class="footer__brand-logo" src="./assets/icons/logo.png" alt="Sip & Chill Café Logo" width="58" height="58">
+          <div class="footer__brand-text">
+            <p class="footer__wordmark">Sip &amp; Chill <em>Café</em></p>
+            <p class="footer__tagline">Every Sip Has A Story</p>
+          </div>
+        </a>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="story.html">Our Story</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="visit.html">Visit Us</a>
+      </nav>
+
+      <div class="footer__visit">
+        <p class="footer__visit-label">Find Us</p>
+        <a class="footer__map" href="https://maps.app.goo.gl/Jgcs1RRxFxRZBNLQA" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+          Get Directions on Google Maps
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="footer-year">2026</span> Sip &amp; Chill Café. All rights reserved.</p>
+      <p class="footer__motto">Good Coffee · Good Food · Good Vibes</p>
+    </div>
+  </footer>
+
+  <!-- ======================= MOBILE STICKY ACTION BAR ======================= -->
+  <div class="actionbar" aria-label="Quick actions">
+    <a class="actionbar__btn" href="menu.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-coffee"/></svg>
+      <span>Explore Menu</span>
+    </a>
+    <span class="actionbar__divider" aria-hidden="true"></span>
+    <a class="actionbar__btn" href="https://maps.app.goo.gl/Jgcs1RRxFxRZBNLQA" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+      <span>Get Directions</span>
+    </a>
+  </div>
+
+  <!-- ======================= LIGHTBOX ======================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button class="lightbox__close" id="lightbox-close" type="button">
+      <span class="sr-only">Close image viewer</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./js/menu-data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Gallery — Sip &amp; Chill Café | The Ambiance in Frames</title>
+  <meta name="description" content="Browse authentic photographs of Sip & Chill Café — floral ceilings, ambient evening lighting, storefront glow, and comfortable seating.">
+  <link rel="icon" type="image/png" href="./assets/icons/logo.png">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="./assets/icons/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- SVG ICON LIBRARY -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-tea" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h13v4.5A5.5 5.5 0 0 1 11.5 20h-2A5.5 5.5 0 0 1 4 14.5V10z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 7c0-1.5 1.5-1.5 1.5-3M12 7c0-1.5 1.5-1.5 1.5-3"/></g></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9h14v5a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6V9z"/><path d="M17.5 10h1.75a2.75 2.75 0 0 1 0 5.5H17.5"/><path d="M6 5.5c0-1.4 1.4-1.4 1.4-2.8M10 5.5c0-1.4 1.4-1.4 1.4-2.8"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-7-6.1-7-11.5a7 7 0 0 1 14 0c0 5.4-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.75"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></g></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z"/></g></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/></g></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9"/><path d="M19 14v5a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 19V6.5A1.5 1.5 0 0 1 5.5 5H10"/></g></symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6l-6 6 6 6"/></g></symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></g></symbol>
+  </svg>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ======================= ANNOUNCEMENT STRIP ======================= -->
+  <p class="announce" aria-hidden="false">
+    <span class="announce__text">Good Coffee&ensp;·&ensp;Good Food&ensp;·&ensp;Good Vibes</span>
+  </p>
+
+  <!-- ======================= NAVIGATION ======================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__brand" href="index.html" aria-label="Sip & Chill Café — Home">
+        <img class="nav__brand-mark" src="./assets/icons/logo.png" alt="Sip & Chill Café Logo" width="48" height="48">
+        <span class="nav__brand-text">
+          <span class="nav__brand-name">Sip &amp; Chill</span>
+          <span class="nav__brand-sub">Café</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="story.html">Our Story</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html" class="is-active" aria-current="page">Gallery</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="menu.html" class="btn btn--gold nav__cta">Explore Menu</a>
+      </nav>
+
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Open menu</span>
+        <svg class="nav__toggle-icon nav__toggle-icon--open" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="nav__toggle-icon nav__toggle-icon--close" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="mobile-menu" aria-hidden="true">
+    <nav class="drawer__inner" aria-label="Mobile">
+      <img class="drawer__logo" src="./assets/icons/logo.png" alt="Sip & Chill Café Logo" width="68" height="68">
+      <p class="drawer__tag">Every Sip Has A Story</p>
+      <a href="index.html" class="drawer__link"><span>Home</span></a>
+      <a href="story.html" class="drawer__link"><span>Our Story</span></a>
+      <a href="menu.html" class="drawer__link"><span>Menu</span></a>
+      <a href="gallery.html" class="drawer__link is-active" aria-current="page"><span>Gallery</span></a>
+      <a href="visit.html" class="drawer__link"><span>Visit Us</span></a>
+      <a href="menu.html" class="btn btn--gold drawer__cta">Explore Menu</a>
+      <p class="drawer__foot">Good Coffee · Good Food · Good Vibes</p>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ======================= SUBPAGE HERO ======================= -->
+    <section class="subhero">
+      <div class="subhero__media" aria-hidden="true">
+        <img src="./assets/images/storefront.jpg" alt="" width="1048" height="1400" fetchpriority="high">
+      </div>
+      <div class="subhero__scrim" aria-hidden="true"></div>
+
+      <div class="container subhero__inner">
+        <p class="subhero__eyebrow">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;" aria-hidden="true"><use href="#i-sparkle"/></svg>
+          Moments &amp; Atmosphere
+        </p>
+        <h1 class="subhero__title">A Visual Tour — <em>The Café in Frames.</em></h1>
+        <p class="subhero__lede">Every photograph here is taken directly in-store at Sip &amp; Chill Café. Explore our cozy seating under floral vines, glowing amber evening lamps, and authentic café vibes.</p>
+
+        <div class="subhero__badge-wrap">
+          <span class="subhero__chip">100% Genuine In-Store Photos</span>
+          <span class="subhero__chip">Click Any Photo To Expand</span>
+          <span class="subhero__chip">Keyboard &amp; Touch Friendly</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= GALLERY SECTION ======================= -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Category Filter Pills -->
+        <div class="gallery-filter-bar" id="gallery-filter-bar" role="group" aria-label="Filter gallery by scene" data-reveal>
+          <button class="filter-chip" type="button" data-cat="all" aria-pressed="true">All Moments</button>
+          <button class="filter-chip" type="button" data-cat="ambiance" aria-pressed="false">Floral Canopy &amp; Seating</button>
+          <button class="filter-chip" type="button" data-cat="twilight" aria-pressed="false">Evening Twilight</button>
+          <button class="filter-chip" type="button" data-cat="corners" aria-pressed="false">Cozy Corners</button>
+          <button class="filter-chip" type="button" data-cat="counter" aria-pressed="false">Counter &amp; Screen</button>
+          <button class="filter-chip" type="button" data-cat="storefront" aria-pressed="false">Storefront</button>
+        </div>
+
+        <!-- Filterable Masonry Grid -->
+        <div class="gallery-masonry" id="gallery-masonry" aria-live="polite"></div>
+
+        <!-- In-Store Menu Board Feature Box -->
+        <div style="margin-top: 2rem; padding: clamp(1.4rem, 3.5vw, 2rem); background: var(--cream-soft); border-radius: var(--radius-lg); border: 1px solid rgba(70, 21, 47, 0.08); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem;" data-reveal>
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-ink); display: block; margin-bottom: 0.4rem;">In-Store Transparency</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--plum);">Want to see the actual menu board?</h3>
+            <p style="color: var(--ink-soft); font-size: 0.95rem; margin-top: 0.3rem;">We photographed the full physical menu board inside the café so you can view all items and prices with zero guesswork.</p>
+          </div>
+          <button class="btn btn--gold btn-view-menu-board" type="button">
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-expand"/></svg>
+            View Official Menu Board Photo
+          </button>
+        </div>
+
+        <!-- Visit Invitation -->
+        <div style="margin-top: 2rem; text-align: center; padding: clamp(2rem, 5vw, 2.8rem) var(--gutter); background: var(--plum); color: var(--cream); border-radius: var(--radius-lg);" data-reveal>
+          <p style="font-family: var(--font-serif); font-style: italic; color: var(--gold); font-size: 1.1rem; margin-bottom: 0.4rem;">Photographs are just a preview</p>
+          <h2 style="font-family: var(--font-serif); font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--cream);">The atmosphere is best felt in person.</h2>
+          <p style="color: var(--cream-soft-text); max-width: 44ch; margin-inline: auto; margin-top: 0.5rem; margin-bottom: 1.8rem;">Come pull up a wooden chair, order a hot cup, and enjoy the bloom.</p>
+          <a class="btn btn--gold" href="https://maps.app.goo.gl/Jgcs1RRxFxRZBNLQA" target="_blank" rel="noopener">
+            Get Directions to Sip &amp; Chill <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="footer__brand-link" href="index.html" aria-label="Sip & Chill Café">
+          <img class="footer__brand-logo" src="./assets/icons/logo.png" alt="Sip & Chill Café Logo" width="58" height="58">
+          <div class="footer__brand-text">
+            <p class="footer__wordmark">Sip &amp; Chill <em>Café</em></p>
+            <p class="footer__tagline">Every Sip Has A Story</p>
+          </div>
+        </a>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="story.html">Our Story</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="visit.html">Visit Us</a>
+      </nav>
+
+      <div class="footer__visit">
+        <p class="footer__visit-label">Find Us</p>
+        <a class="footer__map" href="https://maps.app.goo.gl/Jgcs1RRxFxRZBNLQA" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+          Get Directions on Google Maps
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="footer-year">2026</span> Sip &amp; Chill Café. All rights reserved.</p>
+      <p class="footer__motto">Good Coffee · Good Food · Good Vibes</p>
+    </div>
+  </footer>
+
+  <!-- ======================= MOBILE STICKY ACTION BAR ======================= -->
+  <div class="actionbar" aria-label="Quick actions">
+    <a class="actionbar__btn" href="menu.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-coffee"/></svg>
+      <span>Explore Menu</span>
+    </a>
+    <span class="actionbar__divider" aria-hidden="true"></span>
+    <a class="actionbar__btn" href="https://maps.app.goo.gl/Jgcs1RRxFxRZBNLQA" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+      <span>Get Directions</span>
+    </a>
+  </div>
+
+  <!-- ======================= LIGHTBOX ======================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button class="lightbox__close" id="lightbox-close" type="button">
+      <span class="sr-only">Close image viewer</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" type="button">
+      <span class="sr-only">Previous image</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chev-left"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" type="button">
+      <span class="sr-only">Next image</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chev-right"/></svg>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./js/menu-data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
