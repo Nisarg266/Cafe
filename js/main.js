@@ -219,6 +219,7 @@
     navToggle.setAttribute('aria-expanded', String(open));
     drawer.classList.toggle('is-open', open);
     drawer.setAttribute('aria-hidden', String(!open));
+    document.body.classList.toggle('menu-open', open);
     lockScroll(open);
     if (open) {
       var first = drawer.querySelector('.drawer__link');
